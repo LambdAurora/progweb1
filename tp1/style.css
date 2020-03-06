@@ -1,0 +1,87 @@
+html {
+    font-family: 'Roboto', sans-serif; /* Define the general font */
+}
+
+h2.empattement {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.avecserif {
+    font-size: 200%; /* La taille relative va mieux s'adapter pour les appareils mobiles. */
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #404040;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 250%;
+    text-align: left;
+}
+
+nav > a {
+    color: red;
+}
+
+nav > a:visited {
+    color: purple;
+}
+
+nav > a:hover {
+    color: blue;
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80%;
+    text-align: center;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #42a5f5;
+    min-width: 160px;
+    padding: 4px 8px;
+    box-shadow: 0 2px 2px 0 #0003,0 3px 1px -2px #00000024,0 1px 5px 0 #0000001f;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > ul {
+    list-style: circle inside;
+    padding-left: 4px;
+}
+
+.dropdown-content > ul > li {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    color: #1a237e;
+}
+
+.dropdown-content a:visited {
+    color: #1b5e20;
+}
+
+.dropdown-content > ul > li:hover > a {
+    color: red;
+}
+
+.dropdown-content > ul > li:hover {
+    background-color: #90caf9;
+}
