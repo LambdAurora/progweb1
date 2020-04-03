@@ -1,0 +1,135 @@
+html {
+    font-family: 'Roboto', sans-serif; /* Define the general font */
+    --theme-color: #ff9800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+a {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline overline;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #212329;
+    color: var(--theme-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: var(--theme-color);
+}
+
+nav a {
+    width: calc((100% - 2px) - 0.25em * 2);
+    color: white;
+    text-align: center;
+    padding: 0.25em 0.25em;
+    margin: 0;
+    border: 1px solid black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdba6;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+#deuxieme {
+    margin: 1em;
+}
+
+#quatrieme {
+    padding: 0.5em;
+}
+
+.comments {
+    background-color: darkgreen;
+    padding: 0.25em 0.5em;
+    padding-bottom: 2em;
+    min-width: 20%;
+}
+
+.comments h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f;
+    box-sizing: border-box;
+    padding: 0.2em 0.5em;
+    margin: 1em 0.2em;
+    background-color: white;
+}
+
+.comment:hover {
+    background-color: rgba(200, 200, 200);
+}
+
+footer {
+    background-color: #212329;
+    color: white;
+    padding: 0 0.5em;
+}
+
+/*
+ * Typography
+ */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 400;
+}
+
+h6, .h6 {
+    font-size: 1.35rem;
+    line-height: 110%;
+    margin: 0.767rem 0 0.46rem 0;
+}
+
+/* Desktop (992px is often used) */
+@media only screen and (min-width: 769px) {
+    nav {
+        flex-direction: row;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .main {
+        order: 2;
+    }
+}

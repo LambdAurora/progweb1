@@ -1,0 +1,68 @@
+html {
+    font-family: 'Roboto', sans-serif; /* Define the general font */
+    --theme-color: #ff9800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #212329;
+    color: var(--theme-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin: 0.5em;
+}
+
+.result_output {
+    border: 2px solid black;
+    min-width: 30%;
+}
+
+.error_color {
+    color: red;
+}
+
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+@media only screen and (min-width: 600px) {
+    section {
+        align-items: flex-start;
+    }
+
+    form {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TP3</title>
+
+        <meta name="description" content="TP3 progweb">
+        <meta name="keywords" content="javascript">
+        <meta name="author" content="LambdAurora">
+        <meta name="theme-color" content="#ff9800">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <h1>TP 3</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Tableaux</h2>
+                <form name="tableaux">
+                    <div>
+                        <input type="checkbox" id="array_bool" name="array_bool" value="true">
+                        <label for="array_bool">Supérieur à 15</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="array_invalid" name="array_invalid">
+                        <label for="array_invalid">Valeur invalide</label>
+                    </div>
+                    <input type="button" id="array_submit" value="Submit">
+                </form>
+                <p id="array_display" class="result_output">&nbsp;</p>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <h2>Conversion d'unités</h2>
+                <form name="conversion">
+                    <input type="number" id="conversion_input" name="conversion_input">
+                    <select id="conversion_target">
+                        <option value="g">Grammes</option>
+                        <option value="pounds">Livres</option>
+                        <option value="cm">cm</option>
+                        <option value="inch">Pouces</option>
+                    </select>
+                    <input type="button" id="conversion_submit" value="Submit">
+                </form>
+                <p id="conversion_display" class="result_output">&nbsp;</p>
+            </section>
+        </main>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
