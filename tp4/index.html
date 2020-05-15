@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TP4</title>
+
+        <meta name="description" content="TP4 progweb">
+        <meta name="keywords" content="javascript">
+        <meta name="author" content="LambdAurora">
+        <meta name="theme-color" content="#ff9800">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <h1>TP 4</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Partie 1: les images</h2>
+                <div class="image">
+                    <img src="https://lorempixel.com/400/200" alt="Mon image" />
+                    <p class="description">La description de l'image</p>
+                </div>
+                <div class="image">
+                    <img src="https://lorempixel.com/400/200" alt="Mon image" />
+                    <p class="description">La description de l'image</p>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <h2>Partie 2: Objets!</h2>
+                <div id="cours_a" class="cours"></div>
+                <div class="divider"></div>
+                <div id="cours_b" class="cours"></div>
+
+                <div class="divider"></div>
+                <form name="cours_new">
+                    <div>
+                        <label for="cours_name">Nom:</label>
+                        <input type="text" id="cours_name" name="cours_name">
+                    </div>
+                    <div class="class_data">
+                        <label for="cours_class_name">Matière:</label>
+                        <input type="text" id="cours_class_name" name="cours_class_name">
+                        <label for="cours_type">Type:</label>
+                        <select id="cours_type">
+                            <option value="Cours">Cours</option>
+                            <option value="TD">TD</option>
+                            <option value="TP">TP</option>
+                            <option value="Documentation">Documentation</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cours_content">Contenu: </label>
+                        
+                        <textarea id="cours_content" rows="4" cols="50"></textarea>
+                    </div>
+                    <input type="button" id="cours_submit" value="Submit">
+                </form>
+                <div id="cours_custom" class="cours"></div>
+            </section>
+        </main>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
