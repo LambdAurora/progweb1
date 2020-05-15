@@ -74,6 +74,7 @@ form > * {
 }
 
 #todo_list li {
+    cursor: pointer;
     margin: 0;
     padding: 0.5em 1em;
     background-color: #e0e0e0;
