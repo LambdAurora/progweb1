@@ -81,8 +81,8 @@ form > * {
 }
 
 #todo_list li.done {
-    background-color: #707070;
-    border-color: #404040;
+    background-color: #4F4F4F;
+    border-color: #3F3F3F;
     color: white;
     text-decoration: line-through;
 }
